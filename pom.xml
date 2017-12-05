@@ -16,6 +16,12 @@
             <version>3.1.0</version>
             <scope>provided</scope>
         </dependency>
+        <!-- cglib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.2.5</version>
+        </dependency>
         <!--jsp-->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
