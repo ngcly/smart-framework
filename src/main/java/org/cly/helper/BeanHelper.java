@@ -33,6 +33,13 @@ public class BeanHelper {
     }
 
     /**
+     * 设置 Bean 实例
+     */
+    public static  void setBean(Class<?> cls, Object obj){
+        BEAN_MAP.put(cls,obj);
+    }
+
+    /**
      * 获取 Bean 实例
      */
     public static <T> T getBean(Class<T> cls){

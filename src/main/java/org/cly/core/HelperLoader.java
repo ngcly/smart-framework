@@ -1,9 +1,6 @@
 package org.cly.core;
 
-import org.cly.helper.BeanHelper;
-import org.cly.helper.ClassHelper;
-import org.cly.helper.ControllerHelper;
-import org.cly.helper.IocHelper;
+import org.cly.helper.*;
 import org.cly.util.ClassUtil;
 
 /**
@@ -13,10 +10,10 @@ import org.cly.util.ClassUtil;
 public class HelperLoader {
     public static void init(){
         Class<?>[] classList = {
-                ClassHelper.class,BeanHelper.class,IocHelper.class,ControllerHelper.class
+                ClassHelper.class,BeanHelper.class, AopHelper.class,IocHelper.class,ControllerHelper.class
         };
         for(Class<?> cls: classList){
-            ClassUtil.loadClass(cls.getName(),false);
+            ClassUtil.loadClass(cls.getName(),true);
         }
     }
 
